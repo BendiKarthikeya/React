@@ -4,6 +4,7 @@ node_modules/
 # Build output
 dist/
 build/
+.parcel-cache/
 
 # Logs
 npm-debug.log*
@@ -19,4 +20,4 @@ Thumbs.db
 .env.local
 .env.*.local
 
-# VS Code
+#

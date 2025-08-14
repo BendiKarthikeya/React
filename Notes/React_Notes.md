@@ -87,3 +87,20 @@ cmd> npm install -D parcel
 * When ever we install dependencies to our project there would be 2 types
     * dev dependencies	: it means we need these dependencies during development phase.	
     * normal dependencies  : we need these dependencies in production phase + development phase.
+
+<img src="./images/nodeModules.png">
+
+npm : node package manger
+node_modules [libraty files got saved]
+
+npx : node package executables
+no installation, directly run by taking the help of registration [temporary perpsose]
+
+>cmd npx parcel index.html
+
+## Role of Parcel
+
+* It uses mification mecahnisim to render the production code
+
+* It uses file watching algorithm to gererate the faster responce on ui
+
