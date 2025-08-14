@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        let heading1 = React.createElement("h1",{"id" :"heading1"},"Hello Jummas");
+        let heading2 = React.createElement("h1",{"id":"heading2"},"Happy Birthday");
+        let heading3 = React.createElement("h1",{"id":"heading3"},"happy Holi");
+        let heading4 = React.createElement("h1",{"id":"heading4"},"Happy Rakhi");
+
+        let child1 = React.createElement("div",{"id" : "child1"},heading1,heading2);
+        let child2 = React.createElement("div",{"id":"child2"},heading3,heading4);
+        let parent = React.createElement("div",{"id" : "parent"},child1,child2);
+        
+        // React DOM rendering
+        let root=ReactDOM.createRoot(document.getElementById("root"))
+        root.render(parent);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="somethin.css">
+</head>
+<body>
+    <div id="root">
+
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script type="text/javascript">
+        // let h1 = document.createElement("h1");
+        // h1.textContent = "HELLO";
+        // document.getElementById("root").appendChild(h1);
+
+        // NOW USING REACT
+
+        //Using React we render the DOM
+        const heading =  React.createElement("h1",{"id" : "heading"},"Hello Mundas"); //react element
+        // Access the root element
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+
+        //Rendering
+        root.render(heading);
+    </script>
+</body>
+</html>
