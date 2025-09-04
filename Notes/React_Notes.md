@@ -316,3 +316,13 @@ const BodyComponent = ()=>{
 }
 2) Always create a stateVariable at the beggining of the component
 3) Never create useState() inside if else because it would create inconsistency
+
+
+When every component gets rendered ,painted,mounted first constructor gets called followed by render method gets called when a state variable of a component changes then render method execute multiple times , where as constructor will get called once
+
+mouting of a component will happen in two phases
+1) Render Phase:
+Pure and has no side effects. May be paused,aborted or restarted by React
+
+2) Commit Phase
+Can work with DOM run side effects, schedule updates.
